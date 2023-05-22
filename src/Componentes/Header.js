@@ -6,6 +6,7 @@ import Pesquisa from "../Imagens/pesquisa.png";
 const Conteiner = styled.div`
   display: flex;
   justify-content: space-around;
+  aling-items: center;
   background: transparent;
   opacity: 1;
   backdrop-filter: blur(9px);
@@ -16,6 +17,7 @@ const Conteiner = styled.div`
 `;
 
 const ListaUm = styled.ul`
+  widht: 60%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,11 +26,19 @@ const ListaUm = styled.ul`
 `;
 
 const Icone = styled.img`
+  widht: 20vw;
+  height: 3.5vh;
+`;
+
+const CaixaDoInput = styled.div`
   display: flex;
+  width: 30%;
   justify-content: flex-end;
+  align-items: center;
 `;
 
 const ListaDois = styled.ul`
+  widht: 60%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -44,7 +54,10 @@ export default function Header() {
         <li>Séries</li>
         <li>Filmes</li>
       </ListaUm>
-      <img src={Pesquisa} alt="pesquisa" />
+      <CaixaDoInput>
+        <input />
+        <img src={Pesquisa} alt="pesquisa" />
+      </CaixaDoInput>
       <ListaDois>
         <li>Filtro</li>
         <li>Login</li>
