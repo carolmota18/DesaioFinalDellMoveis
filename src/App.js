@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./Componentes/Header.js";
 import Filme from "./Componentes/Filme.js";
+import Main from "./Componentes/Main.js";
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyled = createGlobalStyle`
@@ -17,6 +18,7 @@ export default function App() {
     <div>
       <GlobalStyled />
       <Header />
+      <Main />
       <Filme />
     </div>
   );
